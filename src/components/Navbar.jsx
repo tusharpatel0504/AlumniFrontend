@@ -102,6 +102,12 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex gap-3 items-center">
           <Link
+            to="/community"
+            className="text-white text-sm px-4 py-2 rounded-lg hover:bg-white/10 transition"
+          >
+            Community
+          </Link>
+          <Link
             to="/login"
             className="text-white text-sm px-4 py-2 rounded-lg hover:bg-white/10 transition"
           >
@@ -142,6 +148,15 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden mt-4 pt-4 border-t border-white/10">
           <ul className="flex flex-col gap-4 text-sm text-gray-300">
+            <li>
+              <Link
+                to="/community"
+                onClick={() => setOpen(false)}
+                className="hover:text-white cursor-pointer"
+              >
+                Community
+              </Link>
+            </li>
             <li
               onClick={() => scrollToSection("about")}
               className="hover:text-white cursor-pointer"
