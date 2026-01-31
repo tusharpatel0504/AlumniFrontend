@@ -20,6 +20,9 @@ import CommunityPastEvents from "./pages/community/CommunityPastEvents";
 import CommunityUpcomingEvents from "./pages/community/CommunityUpcomingEvents";
 import CommunityStudentsRequest from "./pages/community/CommunityStudentsRequest";
 
+import JobPortal from "./pages/job-portal/Jobportal";
+import JobDetail from "./pages/job-portal/JobDetail";
+
 function AppContent() {
   const location = useLocation();
   const hideNavbarFooter = location.pathname.startsWith("/alumnidashboard") || location.pathname.startsWith("/community");
@@ -50,6 +53,10 @@ function AppContent() {
           <Route path="upcoming-events" element={<CommunityUpcomingEvents />} />
           <Route path="students-request" element={<CommunityStudentsRequest />} />
         </Route>
+
+        {/* Job Portal */}
+        <Route path="/jobs" element={<JobPortal />} />
+        <Route path="/jobs/:id" element={<JobDetail />} />
       </Routes>
 
       {!hideNavbarFooter && <Footer />}

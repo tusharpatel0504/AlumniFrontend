@@ -79,34 +79,18 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <ul className="hidden md:flex gap-8 text-sm text-gray-300">
-          <li
-            onClick={() => scrollToSection("about")}
-            className="hover:text-white font-semibold cursor-pointer transition glow-text"
-          >
-            Dummy
-          </li>
-          <li
-            onClick={() => scrollToSection("projects")}
-            className="hover:text-white font-semibold cursor-pointer transition glow-text"
-          >
-            Dummy
-          </li>
-          <li
-            onClick={() => scrollToSection("testimonials")}
-            className="hover:text-white font-semibold cursor-pointer transition glow-text"
-          >
-            Dummy
+          <li>
+            <Link
+              to="/jobs"
+              className="hover:text-white font-semibold cursor-pointer transition glow-text"
+            >
+              Jobs
+            </Link>
           </li>
         </ul>
 
         {/* Desktop CTA */}
         <div className="hidden md:flex gap-3 items-center">
-          <Link
-            to="/community"
-            className="text-white text-sm px-4 py-2 rounded-lg hover:bg-white/10 transition"
-          >
-            Community
-          </Link>
           <Link
             to="/login"
             className="text-white text-sm px-4 py-2 rounded-lg hover:bg-white/10 transition"
@@ -150,30 +134,21 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4 text-sm text-gray-300">
             <li>
               <Link
-                to="/community"
+                to="/jobs"
                 onClick={() => setOpen(false)}
                 className="hover:text-white cursor-pointer"
               >
-                Community
+                Jobs
               </Link>
             </li>
-            <li
-              onClick={() => scrollToSection("about")}
-              className="hover:text-white cursor-pointer"
-            >
-             dummy
-            </li>
-            <li
-              onClick={() => scrollToSection("projects")}
-              className="hover:text-white cursor-pointer"
-            >
-             dummy
-            </li>
-            <li
-              onClick={() => scrollToSection("testimonials")}
-              className="hover:text-white cursor-pointer"
-            >
-              dummy
+            <li>
+              <Link
+                to="/jobs"
+                onClick={() => setOpen(false)}
+                className="hover:text-white cursor-pointer"
+              >
+                Jobs
+              </Link>
             </li>
             <li>
               <Link
