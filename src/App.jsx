@@ -8,11 +8,11 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 
-import AlumniDashboard from "./pages/AlumniDashboard";
-import AlumniProfile from "./pages/AlumniProfile";
-import AlumniJobs from "./pages/AlumniJobs";
-import AlumniRequest from "./pages/AlumniRequest";
-import AlumniSession from "./pages/AlumniSession";
+import AlumniDashboard from "./pages/alumni/AlumniDashboard";
+import AlumniProfile from "./pages/alumni/AlumniProfile";
+import AlumniJobs from "./pages/alumni/AlumniJobs";
+import AlumniRequest from "./pages/alumni/AlumniRequest";
+import AlumniSession from "./pages/alumni/AlumniSession";
 
 function AppContent() {
   const location = useLocation();
