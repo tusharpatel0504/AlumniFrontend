@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-glow {
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.12);
+}
+
+@keyframes marquee-left-slow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-left-slow {
+  animation: marquee-left-slow 36s linear infinite;
+}
+
+
+body {
+  background-color: black;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Hide scrollbar while keeping functionality */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Custom sage green color */
+.sage-green {
+  background-color: #4A5E2A;
+}
+
+.sage-green:hover {
+  background-color: #3A4A1F;
+}
+
+.custom-green {
+  background-color: #4A5E2A;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.custom-green:hover {
+  background-color: #3A4A1F;
+}
+
+.nav-link-hover:hover {
+  background-color: #4A5E2A;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+
+
+.glow-text {
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.4),
+    0 0 24px rgba(255, 255, 255, 0.3),
+    0 0 48px rgba(255, 255, 255, 0.2),
+    0 0 96px rgba(255, 255, 255, 0.1);
+}
